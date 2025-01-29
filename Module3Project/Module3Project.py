@@ -20,13 +20,6 @@ def display_menu():
     print(f"Scoops: ${prices['scoop']:.2f} each")
     print(f"Toppings: ${prices['topping']:.2f} each")
 
-# Simple test function
-def main():
-    display_menu()
-
-if __name__ == "__main__":
-    main()
-
 def get_flavors():
     """Gets ice cream flavor choices from the customer"""
     chosen_flavors = []
@@ -64,17 +57,6 @@ def get_toppings():
             print("Sorry, that topping isn't available.")
     
     return chosen_toppings
-
-# Updated test function
-def main():
-    num_scoops, chosen_flavors = get_flavors()
-    chosen_toppings = get_toppings()
-    print("\nOrder Summary:")
-    print(f"Scoops: {chosen_flavors}")
-    print(f"Toppings: {chosen_toppings}")
-
-if __name__ == "__main__":
-    main()
 
 def calculate_total(num_scoops, num_toppings):
     """Calculates the total cost of the order"""
